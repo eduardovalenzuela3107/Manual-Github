@@ -247,3 +247,32 @@ Una vez que el PR ha sido fusionado:
 ``` Git
 git branch -d tu-rama
 ```
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Gist</h1>
+        <p>Guía rápida para Gist en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+## Acerca de Gist
+<p> Una de las funciones más innovadoras de GitHub es Gist, que permite almacenar y distribuir fragmentos de código sin necesidad de configurar un repositorio completo.Cadenas de código, scripts de bash, Markdown, archivos de texto y otros pequeños fragmentos de datos son alternativas aceptables a los fragmentos de código. Permite distribuir rápidamente un fragmento de código a otros para cualquier propósito, como una demostración, un tutorial o cualquier solución, sin necesidad de configurar un repositorio estándar. </p>
+
+## ¿Cómo crear un Gist?
+
+
+ <b>*<h4>"Como alternativa,puedes arrastrar y soltar un archivo de texto desde tu escritorio directamente en el editor*"</h4></b>
+
+<h3>Paso 1: </h3>
+
+ Desde tu cuenta de <[Github](https://github.com) , puedes elegir Nuevo gist en el Menú Crear o en el ícono más a la izquierda del ícono de tu perfil en la parte superior derecha de la ventana.
+
+![alt text](imagenes/image-9.png) 
+[Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
