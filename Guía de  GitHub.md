@@ -125,7 +125,70 @@ Haga clic en Enviar nueva incidencia para crear la misma. Tu propuesta tiene una
 Una vez creado el problema, continúe la conversación agregando comentarios al problema. Puedes @mention colaboradores o equipos para llamar su atención sobre un comentario.
 ![alt text](imagenes/image-8.png) 
 
-<center><h1><span style="color:green">Pull Request</span></h1></center>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .titulo-container {
+      margin-bottom: 60px;
+      padding: 25px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* Título 3 - Creativo con Fondo */
+    .titulo-3 {
+      text-align: center;
+      background:rgb(33, 203, 17);
+      background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+      padding: 30px 20px;
+      border-radius: 6px;
+      color: white;
+    }
+    
+    .titulo-3 h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+      letter-spacing: 2px;
+    }
+    
+    .titulo-3 p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Pull Request</h1>
+        <p>Guía rápida para Pull Request en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
 Una solicitud de cambios es una propuesta para combinar un conjunto de cambios de una rama con otra. En una solicitud de cambios, los colaboradores pueden revisar y analizar el conjunto propuesto de cambios antes de integrar los cambios en el código base principal. Las solicitudes de cambios muestran las diferencias o la diferencias entre el contenido de la rama de origen y el contenido de la rama de destino.
   
 Puedes crear solicitudes de incorporación de cambios en GitHub.com, con GitHub Desktop, en GitHub Codespaces, en GitHub Mobile y al usar GitHub CLI.
