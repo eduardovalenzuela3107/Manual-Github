@@ -124,3 +124,63 @@ Haga clic en Enviar nueva incidencia para crear la misma. Tu propuesta tiene una
 
 Una vez creado el problema, continúe la conversación agregando comentarios al problema. Puedes @mention colaboradores o equipos para llamar su atención sobre un comentario.
 ![alt text](imagenes/image-8.png) 
+
+<center><h1><span style="color:green">Pull Request</span></h1></center>
+Una solicitud de cambios es una propuesta para combinar un conjunto de cambios de una rama con otra. En una solicitud de cambios, los colaboradores pueden revisar y analizar el conjunto propuesto de cambios antes de integrar los cambios en el código base principal. Las solicitudes de cambios muestran las diferencias o la diferencias entre el contenido de la rama de origen y el contenido de la rama de destino.
+  
+Puedes crear solicitudes de incorporación de cambios en GitHub.com, con GitHub Desktop, en GitHub Codespaces, en GitHub Mobile y al usar GitHub CLI.
+
+## ¿Por qué evitar cambios directos en la rama principal?
+Modificar directamente la rama principal puede ocasionar varios problemas, como:
+
+- Conflictos de código: Si varios colaboradores editan los mismos archivos en main, se pueden sobrescribir cambios entre sí.
+
+- Errores en producción: Cambios no revisados o sin probar pueden introducir errores en versiones en vivo del proyecto.
+
+- Falta de trazabilidad: Sin revisiones, es difícil verificar la calidad del código o entender el propósito de un cambio.
+
+- Bloqueo del flujo de trabajo: Si la rama principal se rompe, todos los colaboradores pueden verse afectados.
+
+## Pasos para crear y trabajar con un Pull Request
+1. Crear una nueva rama local
+Antes de comenzar una nueva funcionalidad o corrección, crea una rama desde la rama principal:
+``` Git
+git checkout main
+git pull origin main
+git checkout -b developer01
+```
+2. Realizar cambios y hacer commits
+Haz los cambios necesarios y guarda tu progreso con commits claros y atómicos:
+``` Git
+git add .
+git commit -m "Agrega validación de formulario de login"
+```
+3. Subir la rama al repositorio remoto (GitHub)
+Una vez que los cambios están listos, sube la rama:
+``` Git
+git push -u origin developer01
+```
+4. Crear el Pull Request (PR)
+- Ve al repositorio en GitHub.
+- Verás un botón para “Compare & Pull Request” al subir la nueva rama.
+- Describe los cambios en el cuerpo del PR: qué hiciste, por qué, y cualquier detalle útil.
+- Asigna revisores, etiquetas y vincula el PR a una issue si corresponde.
+## ¿Cómo se fusiona un Pull Request?
+1. Comparación y Revisión Final  
+Los revisores del equipo deben confirmar que los cambios funcionen como se espera, no rompen otras partes del sistema y cumplen con los estándares del proyecto. Además, se puede ver la comparación de cambios entre ramas en la pestaña del PR, lo que facilita detectar errores o mejoras antes del merge.
+2. Resolver Conflictos  
+GitHub detecta automáticamente si hay conflictos entre la rama del PR y la rama base. Dos posibles situaciones:
+- Sin conflictos: Se muestra una marca verde y GitHub permite fusionar directamente.
+- Con conflictos: Aparecerá un mensaje indicando que debes resolver conflictos manualmente.
+3. Opciones de fusión  
+- Merge Commit (por defecto): Crea un commit adicional de fusión. Útil para mantener el historial completo.
+- Squash and Merge: Une todos los commits en uno solo. Recomendado para mantener un historial más limpio y legible.
+- Rebase and Merge: Aplica los commits uno por uno sobre la rama base. Útil para mantener un historial lineal.
+4. Eliminación de la Rama
+Una vez que el PR ha sido fusionado:
+- GitHub ofrecerá un botón para eliminar la rama remota usada en el PR.
+- Esto no elimina la rama local en tu máquina, pero ayuda a mantener el repositorio remoto limpio y organizado.
+- Si quieres eliminarla localmente también:
+``` Git
+git branch -d tu-rama
+```
