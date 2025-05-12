@@ -75,7 +75,7 @@ En esta guía se muestra cómo usar GitHub Issues para planear y realizar un seg
  1. En GitHub, vaya a la página principal del repositorio.
  2. Debajo del nombre del repositorio, haz clic en  Cuestiones.
 
-![cuestiones](image-1.png)
+![cuestiones](imagenes/image-1.png)
 3. Haga clic en Nuevo problema.
 4. En este ejemplo, comenzaremos con un problema en blanco. Tu repositorio puede usar plantillas de incidencias y formularios de incidencias para animar a los colaboradores a proporcionar información específica.
 
