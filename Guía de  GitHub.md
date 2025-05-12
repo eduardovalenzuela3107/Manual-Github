@@ -83,12 +83,12 @@ En esta guía se muestra cómo usar GitHub Issues para planear y realizar un seg
 * Dale a tu número un título descriptivo.
 * Agregue una descripción que explique el propósito del problema, incluidos los detalles que puedan ayudar a resolverlo.
 
-![alt text](image-2.png)
+![alt text](imagenes/image-2.png)
 
 <h1><span style="color:green">Adición de una lista de tareas</span></h1>
 
 uede ser útil dividir los problemas grandes en tareas más pequeñas o viceversa.Haga referencia a los problemas existentes por número de problema o URL. Puede usar texto sin formato para realizar un seguimiento de las tareas que no tienen un problema correspondiente y convertirlas en problemas más adelante.
-![alt text](image-3.png)
+![alt text](imagenes/image-3.png)
 
 <h1><span style="color:green">Adición de etiquetas</span></h1>
 Agregue una etiqueta para categorizar su problema. Por ejemplo,puede usar una etiqueta para indicar que un problema es un error que un colaborador por primera vez podría detectar. Los usuarios pueden filtrar
@@ -97,23 +97,23 @@ Agregue una etiqueta para categorizar su problema. Por ejemplo,puede usar una et
  buggood first issue 
 ```
 Puede utilizar las etiquetas predeterminadas o puede crear una nueva etiqueta.
-![alt text](image-4.png)
+![alt text](imagenes/image-4.png)
 
 <h1><span style="color:green">Adición de hitos</span></h1>
 Puede agregar un hito para realizar un seguimiento del problema como parte de un objetivo basado en fechas. Un hito mostrará el progreso de los problemas a medida que se acerque la fecha objetivo.
 
-![alt text](image-5.png)
+![alt text](imagenes/image-5.png)
  
 <h1><span style="color:green">Asignación del problema </span></h1>
 Para comunicar la responsabilidad, puede asignar el problema a un miembro de su organización.
 
-![alt text](image-6.png)
+![alt text](imagenes/image-6.png)
 
 ## Agregar la propuesta a un proyecto 
 <h1><span style="color:green">Agregar la propuesta a un proyecto  </span></h1>
 
 Puede agregar la incidencia a un proyecto existente y rellenar los metadatos del proyecto. 
-![alt text](image-7.png)
+![alt text](imagenes/image-7.png)
 
 ## Envío de su problema 
 <h1><span style="color:green">Envío de su problema </span></h1>
@@ -123,4 +123,4 @@ Haga clic en Enviar nueva incidencia para crear la misma. Tu propuesta tiene una
 <h1><span style="color:green">Comunicante </span></h1>
 
 Una vez creado el problema, continúe la conversación agregando comentarios al problema. Puedes @mention colaboradores o equipos para llamar su atención sobre un comentario.
-![alt text](image-8.png) 
+![alt text](imagenes/image-8.png) 
