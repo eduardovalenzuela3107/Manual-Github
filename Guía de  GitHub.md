@@ -283,6 +283,7 @@ Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente hac
 - **Creat secret gist** : Es oculto para los buscadores
 <br>
 <br>
+
 ![alt text](imagenes/image-gist2.png) 
 
 <h2>Paso 2: </h2>
