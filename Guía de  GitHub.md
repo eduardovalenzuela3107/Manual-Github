@@ -289,8 +289,8 @@ Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente hac
 En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo de Html, puede añadir la extensión .html al final del archivo, como codigoprueba.html .
 
 [Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
-=======
-[Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
+
+
 
 <center><h1><span style="color:green">Code Spaces</span></h1></center>
 GitHub Codespaces es un entorno de desarrollo en la nube totalmente integrado con GitHub, que te permite comenzar a programar de inmediato, sin necesidad de instalar herramientas o dependencias en tu equipo local. Cada codespace es una instancia de entorno de desarrollo basada en contenedores Docker que se ejecuta en una máquina virtual en la infraestructura de GitHub.  
