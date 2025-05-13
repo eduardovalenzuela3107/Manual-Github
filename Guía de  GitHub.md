@@ -302,14 +302,19 @@ GitHub Codespaces te permite crear un espacio de código (codespace) a partir de
 1. Crear un codespace desde un repositorio:  
 - Ve al repositorio en GitHub.  
 - Haz clic en el botón verde "Code" y luego en "Codespaces".  
+![alt text](imagenes/image-10.PNG)
 - Selecciona "New codespace" y elige la rama desde la cual quieres iniciar.  
+![alt text](imagenes/image-11.PNG)
 - GitHub creará el entorno de desarrollo automáticamente.  
+![alt text](imagenes/image-12.PNG)
 2. Crear un codespace desde una plantilla:  
 - Ve a github.com/codespaces y elige una plantilla prediseñada o en blanco.  
+![alt text](imagenes/image-13.PNG)
 - Ideal para crear proyectos nuevos con una base preconfigurada.  
 3. Reabrir un codespace existente:  
 - Desde GitHub, visita la pestaña "Codespaces" de tu perfil o del repositorio.  
 - Allí verás todos tus codespaces disponibles y podrás reabrir cualquiera.  
+![alt text](imagenes/image-14.PNG)
 
 # Personalización de GitHub Codespaces
 GitHub Codespaces permite crear entornos de desarrollo personalizados y consistentes para cada proyecto. Esto es especialmente útil cuando se trabaja en equipo o se manejan múltiples proyectos con requisitos técnicos distintos. Existen varias formas de adaptar el entorno de tu codespace a tus necesidades y preferencias, ya sea a nivel de proyecto o a nivel de usuario.
