@@ -262,10 +262,10 @@ git branch -d tu-rama
 </body>
 </html>
 
-## Acerca de Gist
+# Acerca de Gist
 <p> Una de las funciones más innovadoras de GitHub es Gist, que permite almacenar y distribuir fragmentos de código sin necesidad de configurar un repositorio completo.Cadenas de código, scripts de bash, Markdown, archivos de texto y otros pequeños fragmentos de datos son alternativas aceptables a los fragmentos de código. Permite distribuir rápidamente un fragmento de código a otros para cualquier propósito, como una demostración, un tutorial o cualquier solución, sin necesidad de configurar un repositorio estándar. </p>
 
-## ¿Cómo crear un Gist?
+# ¿Cómo crear un Gist?
 
 
  <b>*<h4>"Como alternativa,puedes arrastrar y soltar un archivo de texto desde tu escritorio directamente en el editor*"</h4></b>
@@ -277,19 +277,44 @@ git branch -d tu-rama
 ![alt text](imagenes/image-9.png) 
 
 
-Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente haciendo clic en el Menú Crear,pero tendrás dos opciones:
-
-- **Create public gist**: Es visible para todos
-- **Creat secret gist** : Es oculto para los buscadores
-<br>
+Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente haciendo clic en el Menú.
 <br>
 
-![alt text](imagenes/image-gist2.png) 
+![alt text](imagenes/image-15.png) 
 
 <h2>Paso 2: </h2>
-En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo de Html, puede añadir la extensión .html al final del archivo, como codigoprueba.html .
+En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo en Html, puede añadir la extensión como codigoprueba.html para este caso. Luego se agrega el snippet que se refiere a un fragmento pequeño y reutilizable de código fuente, código binario o texto.
+<br>
+<br>
 
-[Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
+![alt text](imagenes/image-16.png)
+
+<h2>Paso 3: </h2>
+Una vez agregado tu código en las líneas numeradas,haz clic en "Crear gist secreto" o en la flecha hacia abajo para ver más opciones. Puedes configurar tu código como público o secreto después de escribirlo. Si lo configuras como secreto, solo la persona con acceso a la URL de tu gist podrá verlo.
+<br>
+<br>
+
+![alt text](imagenes/image-17.png)
+
+Tu gist de GitHub ya está listo para compartir con quien quieras. Puedes copiar el código de incrustación de tu gist si quieres incrustarlo.
+Puedes usar varios métodos para compartir un resumen como:
+
+- Incrustarlo en un sitio web.
+- Copia un enlace para compartir y enviar.
+- Clonar con Git o consultar con SVN usando la dirección web del repositorio (Clonar mediante HTTPS).
+- Clonación con una clave SSH y una frase de contraseña desde la configuración de GitHub (Clonar mediante SSH).
+<br>
+<br>
+
+![alt text](imagenes/image-18.png)
+
+Para ver tus gists, navega y haz clic en tu foto de perfil para abrir el menú desplegable y seleccionar Tus gists .
+<br>
+
+![alt text](imagenes/image-19.png) 
+<br>
+<br>
+*Para más información:* [Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 
 
 
