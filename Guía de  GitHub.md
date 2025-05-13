@@ -270,9 +270,22 @@ git branch -d tu-rama
 
  <b>*<h4>"Como alternativa,puedes arrastrar y soltar un archivo de texto desde tu escritorio directamente en el editor*"</h4></b>
 
-<h3>Paso 1: </h3>
+<h2>Paso 1: </h2>
 
- Desde tu cuenta de <[Github](https://github.com) , puedes elegir Nuevo gist en el Menú Crear o en el ícono más a la izquierda del ícono de tu perfil en la parte superior derecha de la ventana.
+ Desde tu cuenta de [Github](https://github.com) , puedes elegir Nuevo gist en el Menú Crear o en el ícono más a la izquierda del ícono de tu perfil en la parte superior derecha de la ventana.
 
 ![alt text](imagenes/image-9.png) 
+
+
+Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente haciendo clic en el Menú Crear,pero tendrás dos opciones:
+
+- **Create public gist**: Es visible para todos
+- **Creat secret gist** : Es oculto para los buscadores
+<br>
+<br>
+![alt text](imagenes/image-gist2.png) 
+
+<h2>Paso 2: </h2>
+En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo de Html, puede añadir la extensión .html al final del archivo, como codigoprueba.html .
+
 [Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
