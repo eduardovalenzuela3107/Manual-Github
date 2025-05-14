@@ -253,6 +253,7 @@ Una vez que el PR ha sido fusionado:
 ``` Git
 git branch -d tu-rama
 ```
+*Para más información:* [Pull-Request](https://docs.github.com/es/pull-requests)
 
 </style>
 </head>
@@ -559,6 +560,7 @@ Como Codespaces se ejecuta en la nube y está disponible desde el navegador o VS
 6. Trabajo con múltiples proyectos:  
 Si trabajas en diferentes proyectos con stacks distintos, puedes crear un codespace personalizado para cada uno. Esto evita conflictos de versiones de dependencias y mantiene tu entorno local limpio.
 
+*Para más información:* [Codespaces](https://docs.github.com/en/codespaces)
 
 <!DOCTYPE html>
 <html lang="es">
