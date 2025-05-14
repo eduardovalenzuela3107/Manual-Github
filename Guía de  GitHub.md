@@ -189,11 +189,12 @@ Una vez creado el problema, continúe la conversación agregando comentarios al 
 </body>
 </html>
 
+<h1><span style="color:green">Introducción</span></h1>
 Una solicitud de cambios es una propuesta para combinar un conjunto de cambios de una rama con otra. En una solicitud de cambios, los colaboradores pueden revisar y analizar el conjunto propuesto de cambios antes de integrar los cambios en el código base principal. Las solicitudes de cambios muestran las diferencias o la diferencias entre el contenido de la rama de origen y el contenido de la rama de destino.
   
 Puedes crear solicitudes de incorporación de cambios en GitHub.com, con GitHub Desktop, en GitHub Codespaces, en GitHub Mobile y al usar GitHub CLI.
 
-## ¿Por qué evitar cambios directos en la rama principal?
+<h1><span style="color:green">¿Por qué evitar cambios directos en la rama principal?</span></h1>
 Modificar directamente la rama principal puede ocasionar varios problemas, como:
 
 - Conflictos de código: Si varios colaboradores editan los mismos archivos en main, se pueden sobrescribir cambios entre sí.
@@ -203,8 +204,8 @@ Modificar directamente la rama principal puede ocasionar varios problemas, como:
 - Falta de trazabilidad: Sin revisiones, es difícil verificar la calidad del código o entender el propósito de un cambio.
 
 - Bloqueo del flujo de trabajo: Si la rama principal se rompe, todos los colaboradores pueden verse afectados.
+<h1><span style="color:green">Pasos para crear y trabajar con un Pull Request</span></h1>
 
-## Pasos para crear y trabajar con un Pull Request
 1. Crear una nueva rama local
 Antes de comenzar una nueva funcionalidad o corrección, crea una rama desde la rama principal:
 ``` Git
@@ -212,23 +213,28 @@ git checkout main
 git pull origin main
 git checkout -b developer01
 ```
+
 2. Realizar cambios y hacer commits
 Haz los cambios necesarios y guarda tu progreso con commits claros y atómicos:
 ``` Git
 git add .
 git commit -m "Agrega validación de formulario de login"
 ```
+
 3. Subir la rama al repositorio remoto (GitHub)
 Una vez que los cambios están listos, sube la rama:
 ``` Git
 git push -u origin developer01
 ```
+
 4. Crear el Pull Request (PR)
 - Ve al repositorio en GitHub.
 - Verás un botón para “Compare & Pull Request” al subir la nueva rama.
 - Describe los cambios en el cuerpo del PR: qué hiciste, por qué, y cualquier detalle útil.
 - Asigna revisores, etiquetas y vincula el PR a una issue si corresponde.
-## ¿Cómo se fusiona un Pull Request?
+
+<h1><span style="color:green">¿Cómo se fusiona un Pull Request?</span></h1>
+
 1. Comparación y Revisión Final  
 Los revisores del equipo deben confirmar que los cambios funcionen como se espera, no rompen otras partes del sistema y cumplen con los estándares del proyecto. Además, se puede ver la comparación de cambios entre ramas en la pestaña del PR, lo que facilita detectar errores o mejoras antes del merge.
 2. Resolver Conflictos  
@@ -404,12 +410,77 @@ GitHub Pages no se limita a alojar su sitio; también ofrece una gran cantidad d
 
 
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .titulo-container {
+      margin-bottom: 60px;
+      padding: 25px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* Título 3 - Creativo con Fondo */
+    .titulo-3 {
+      text-align: center;
+      background:rgb(33, 203, 17);
+      background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+      padding: 30px 20px;
+      border-radius: 6px;
+      color: white;
+    }
+    
+    .titulo-3 h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+      letter-spacing: 2px;
+    }
+    
+    .titulo-3 p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Codespaces</h1>
+        <p>Guía rápida para Codespaces en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
-<center><h1><span style="color:green">Code Spaces</span></h1></center>
+<h1><span style="color:green">Introducción</span></h1>
+
 GitHub Codespaces es un entorno de desarrollo en la nube totalmente integrado con GitHub, que te permite comenzar a programar de inmediato, sin necesidad de instalar herramientas o dependencias en tu equipo local. Cada codespace es una instancia de entorno de desarrollo basada en contenedores Docker que se ejecuta en una máquina virtual en la infraestructura de GitHub.  
 Cada espacio de código que crees se aloja en GitHub en un contenedor Docker, ejecutándose en una máquina virtual. Puedes elegir entre varios tipos de máquinas virtuales, desde 2 núcleos, 8 GB de RAM y 32 GB de almacenamiento, hasta 32 núcleos, 64 GB de RAM y 128 GB de almacenamiento.
 
-# Uso de GitHub Codespaces  
+<h1><span style="color:green">Uso de Github Codespaces</span></h1>
+  
 GitHub Codespaces te permite crear un espacio de código (codespace) a partir de una plantilla  o de cualquier rama o commit de un repositorio existente. Esto te da flexibilidad para empezar desde cero o trabajar con una versión específica del código.  
 1. Crear un codespace desde un repositorio:  
 - Ve al repositorio en GitHub.  
@@ -428,9 +499,12 @@ GitHub Codespaces te permite crear un espacio de código (codespace) a partir de
 - Allí verás todos tus codespaces disponibles y podrás reabrir cualquiera.  
 ![alt text](imagenes/image-14.PNG)
 
-# Personalización de GitHub Codespaces
+<h1><span style="color:green">Personalización de GitHub Codespaces</span></h1>
+
 GitHub Codespaces permite crear entornos de desarrollo personalizados y consistentes para cada proyecto. Esto es especialmente útil cuando se trabaja en equipo o se manejan múltiples proyectos con requisitos técnicos distintos. Existen varias formas de adaptar el entorno de tu codespace a tus necesidades y preferencias, ya sea a nivel de proyecto o a nivel de usuario.
-## Configuración del contenedor de desarrollo (devcontainer.json)
+
+<h2><span style="color:green">Configuración del contenedor de desarrollo (devcontainer.json)</span></h2>
+
 La forma más robusta de personalizar un codespace es mediante la configuración de contenedores de desarrollo. Esto se logra añadiendo una carpeta .devcontainer/ dentro del repositorio, con uno o más archivos de configuración, principalmente devcontainer.json.  
 Esto permite definir de forma explícita:
 - El sistema operativo base (imagen de contenedor)
@@ -438,7 +512,9 @@ Esto permite definir de forma explícita:
 - Extensiones de Visual Studio Code a incluir
 - Comandos de instalación o configuración que se ejecutan al iniciar el entorno
 - Variables de entorno y ajustes específicos del proyecto
-## Uso de Dotfiles
+
+<h2><span style="color:green">Uso de Dotfiles</span></h2>
+
 Además de configurar el entorno del proyecto, los usuarios pueden personalizar su codespace de forma individual utilizando dotfiles. GitHub permite enlazar un repositorio público de dotfiles en tu cuenta, que se aplicará automáticamente a cualquier codespace que crees.
 Los dotfiles permiten:
 - Configurar preferencias de shell (.bashrc, .zshrc)
@@ -446,7 +522,9 @@ Los dotfiles permiten:
 - Instalar herramientas o configuraciones propias
 - Aplicar ajustes de Git, como nombre de usuario, editor predeterminado, etc.  
 Puedes configurar esto desde tu perfil de GitHub, en la sección Codespaces > Dotfiles, y GitHub se encargará de clonar y aplicar el repositorio cada vez que inicies un nuevo codespace.
-## Sincronización de configuración de VS Code
+
+<h2><span style="color:green">Sincronización de configuración de VS Code</span></h2>
+
 Si usas Visual Studio Code, también puedes activar la sincronización de configuración para mantener tu experiencia uniforme entre tu instalación local y los codespaces. Esta función sincroniza:  
 - Temas y apariencia
 - Atajos de teclado
@@ -455,7 +533,8 @@ Si usas Visual Studio Code, también puedes activar la sincronización de config
 - Extensiones instaladas  
 Esto es especialmente útil si trabajas desde diferentes dispositivos o accedes a Codespaces desde el navegador, ya que te sentirás como si estuvieras trabajando en tu equipo local.
 
-# Facturación y uso de Codespaces
+<h1><span style="color:green">Facturación y uso de Codespaces</span></h1>
+
 - Cuentas personales
 Todas las cuentas personales en GitHub, ya sean del plan Gratuito o Pro, incluyen una cuota mensual de uso gratuito de GitHub Codespaces. Puedes comenzar a usar esta función sin necesidad de configurar nada adicional ni proporcionar información de pago.  
 Si creas un codespace desde un repositorio que pertenece a una organización, el consumo puede facturarse directamente a la organización si esta lo permite. En caso contrario, el uso se cobrará a tu cuenta personal. Una vez que superas el uso gratuito mensual, puedes continuar utilizando Codespaces agregando un método de pago y configurando un límite de gasto en tu cuenta.
@@ -464,7 +543,8 @@ Si creas un codespace desde un repositorio que pertenece a una organización, el
 Las organizaciones con planes GitHub Team o GitHub Enterprise pueden cubrir los costos de GitHub Codespaces para sus miembros y colaboradores. Esto se aplica específicamente a los codespaces creados a partir de repositorios propiedad de la organización.  
 Cuando un codespace es facturado a la organización, esta se convierte en su propietaria y tiene la capacidad de eliminarlo si lo considera necesario. Además, las organizaciones pueden establecer límites de gasto y decidir quién es responsable de los pagos. La posibilidad de crear codespaces desde un repositorio de la organización puede depender de la visibilidad del repositorio y de la configuración establecida por la propia organización o empresa matriz.
 
-# Casos de uso prácticos de GitHub Codespaces
+<h1><span style="color:green">Casos de uso prácticos de GitHub Codespaces</span></h1>
+
 GitHub Codespaces no solo agiliza la configuración del entorno, sino que abre posibilidades para escenarios de trabajo que antes requerían mucho tiempo o infraestructura adicional. A continuación encontrarás ejemplos de cómo aprovechar Codespaces en distintas situaciones reales:
 1. Revisión rápida de Pull Requests:  
 Al recibir una pull request, puedes abrir un codespace directamente desde esa rama para revisar, probar y depurar los cambios en un entorno aislado. Esto elimina la necesidad de clonar el repositorio, cambiar de rama o instalar dependencias localmente.
