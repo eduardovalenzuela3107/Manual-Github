@@ -677,3 +677,50 @@ Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.git
  ![alt text](imagenes/image-29.png)
 
 **Asi es como puedes crear tu proyecto en GitHub.**
+
+
+<h1><span style="color:green">Creación de etiquetas en mi proyecto con GitHub Projects</span></h1>
+
+En este ejemplo se trabajará con el proyecto titulado Pago de la tienda de dispositivos, para el cual se proporcionará el siguiente enlace.
+[Pago de la tienda de dispositivos](https://devchallenges.io/challenge/apple-shop-checkout-page-challenge)
+
+Con este tema, realizaremos una simulación sobre cómo utilizar las etiquetas para llevar a cabo el proyecto de manera más eficiente.
+
+**1. Creación del proyecto:**
+Después de crear el repositorio, accedemos a la sección "Projects" para iniciar un nuevo proyecto. Haz clic en "New project" y selecciona una de las plantillas disponibles para comenzar a organizar tu flujo de trabajo.
+
+**2. Selección de la plantilla:**
+Una vez dentro, selecciona la plantilla "Board", la cual te proporcionará una vista tipo tablero con tres columnas predeterminadas:
+
+* To do (Por hacer)
+
+* In Progress (En progreso)
+
+* Done (Hecho)
+
+![alt text](imagen-32.png)
+
+**3. Asignación de tareas:**
+En esta etapa, comenzaremos a desglosar el trabajo en subtareas específicas. Para cada tarjeta del tablero, puedes realizar las siguientes acciones:
+
+* **Agregar subtareas** o listas de verificación.
+
+* **Incluir imágenes** referenciales para mayor claridad.
+
+* **Vincular el proyecto con el repositorio** correspondiente.
+
+* **Asignar la tarea a un colaborador**, quien será responsable de su ejecución dentro del plazo estimado
+
+![alt text](imagen-33.png)
+
+**4. Vista general del tablero:**
+Después de haber configurado las tareas y subtareas, obtendremos una vista estructurada como la siguiente. Esta disposición facilitará la gestión eficiente del proyecto planificado junto al equipo de trabajo, permitiendo un seguimiento claro del avance y la colaboración entre los integrantes.
+
+![alt text](image-34.png)
+
+[ejemplo_projects](https://github.com/users/eduardovalenzuela3107/projects/3/views/1)
+
+**5. Conclusión**
+Y eso sería todo respecto al uso eficiente y eficaz de GitHub Projects para el desarrollo colaborativo de un proyecto. Esta herramienta permite organizar tareas, asignar responsabilidades y realizar un seguimiento claro del progreso, lo que contribuye significativamente a una gestión colectiva más ordenada y productiva.
+
+
