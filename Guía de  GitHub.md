@@ -478,3 +478,116 @@ Al crear un codespace, puedes replicar entornos de producción o testing sin afe
 Como Codespaces se ejecuta en la nube y está disponible desde el navegador o VS Code, puedes continuar tu trabajo desde cualquier dispositivo con conexión a Internet, sin depender de tu equipo habitual.
 6. Trabajo con múltiples proyectos:  
 Si trabajas en diferentes proyectos con stacks distintos, puedes crear un codespace personalizado para cada uno. Esto evita conflictos de versiones de dependencias y mantiene tu entorno local limpio.
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .titulo-container {
+      margin-bottom: 60px;
+      padding: 25px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* Título 3 - Creativo con Fondo */
+    .titulo-3 {
+      text-align: center;
+      background:rgb(33, 203, 17);
+      background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+      padding: 30px 20px;
+      border-radius: 6px;
+      color: white;
+    }
+    
+    .titulo-3 h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+      letter-spacing: 2px;
+    }
+    
+    .titulo-3 p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>GitHub Projects</h1>
+        <p>Gestión de proyectos con GitHub projects</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<h1><span style="color:green">Introducción</span></h1>
+
+Un proyecto es una hoja de cálculo, un tablero de tareas y una hoja de ruta adaptables que se integran con tus propuestas y solicitudes de incorporación de cambios en GitHub para ayudarte a planificar y realizar un seguimiento de tu trabajo de forma eficaz. Puedes crear y personalizar varias vistas filtrando, ordenando, agrupando tus propuestas y solicitudes de extracción. Un proyecto proporciona funciones flexibles que puedes personalizar según las necesidades y los procesos de tu equipo.
+
+<h1><span style="color:green">¿Qué es GitHub Projects? </span></h1>
+
+Github projects es una funcionalidad de la platoforma github diseñado para facilitar la gestión de proyectos en el ámbito de la programación y desarrollo de software , es un tabero virtual donde se puede crear tarjetas para cada tarea , organizarla en columnas segun su estado y estas a asignarlas a miembros del equipo y establecer plazos.  
+
+Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+<h1><span style="color:green">Creando mi proyecto con GitHub Projects</span></h1>
+ 
+ 1. GitHub Projects lo puedes realizar de 3 formas:
+  * Your repositories
+  * Your projects
+  * Your organizations
+
+![alt text](image-23-2.png)
+
+(en este caso utilizamos el Your repositories)
+
+ 2. Seleccionar el new para comenzar un repositorio  
+
+ ![alt text](image-24.png)
+
+ 3. Después te pediré algunos datos sobre el proyecto, como el nombre, la descripción y su estado (público o privado).
+
+ ![alt text](image-25.png)
+
+ 4. Una vez creado el repositorio, accedemos a la sección "Projects" para crear el proyecto.
+
+ ![alt text](image-26.png)
+
+ 5. Luego, haz clic en donde dice "New project".
+ 6. Se mostrarán varias plantillas que te ayudarán a gestionar tu proyecto de forma más     eficiente. 
+
+ ![alt text](image-28.png)
+
+ 7. Al acceder a la plantilla, veremos las siguientes columnas:
+ * **"to do"** = por hacer 
+ * **"In Progress"** = en progreso 
+ * **"Done"** = hecho 
+ En la esquina superior derecha se muestra un gráfico que indica el progreso del proyecto.
+
+ ![alt text](image-29.png)
+
+**Asi es como puedes crear tu proyecto en GitHub.**
