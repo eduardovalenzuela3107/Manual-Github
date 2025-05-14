@@ -698,7 +698,7 @@ Una vez dentro, selecciona la plantilla "Board", la cual te proporcionará una v
 
 * Done (Hecho)
 
-![alt text](imagen-32.png)
+![alt text](imagenes/imagen-32.png)
 
 **3. Asignación de tareas:**
 En esta etapa, comenzaremos a desglosar el trabajo en subtareas específicas. Para cada tarjeta del tablero, puedes realizar las siguientes acciones:
@@ -711,12 +711,12 @@ En esta etapa, comenzaremos a desglosar el trabajo en subtareas específicas. Pa
 
 * **Asignar la tarea a un colaborador**, quien será responsable de su ejecución dentro del plazo estimado
 
-![alt text](imagen-33.png)
+![alt text](imagenes/imagen-33.png)
 
 **4. Vista general del tablero:**
 Después de haber configurado las tareas y subtareas, obtendremos una vista estructurada como la siguiente. Esta disposición facilitará la gestión eficiente del proyecto planificado junto al equipo de trabajo, permitiendo un seguimiento claro del avance y la colaboración entre los integrantes.
 
-![alt text](image-34.png)
+![alt text](imagenes/image-34.png)
 
 [ejemplo_projects](https://github.com/users/eduardovalenzuela3107/projects/3/views/1)
 
