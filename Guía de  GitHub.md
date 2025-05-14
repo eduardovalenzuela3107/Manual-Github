@@ -254,6 +254,8 @@ Una vez que el PR ha sido fusionado:
 git branch -d tu-rama
 ```
 *Para más información:* [Pull-Request](https://docs.github.com/es/pull-requests)
+- *Video de ayuda:*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs?si=SVpOZHBZuyOQQWtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </style>
 </head>
@@ -560,7 +562,9 @@ Como Codespaces se ejecuta en la nube y está disponible desde el navegador o VS
 6. Trabajo con múltiples proyectos:  
 Si trabajas en diferentes proyectos con stacks distintos, puedes crear un codespace personalizado para cada uno. Esto evita conflictos de versiones de dependencias y mantiene tu entorno local limpio.
 
-*Para más información:* [Codespaces](https://docs.github.com/en/codespaces)
+*Para más información:* [Codespaces](https://docs.github.com/en/codespaces)  
+- *Video de ayuda:*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cO-oFpePy3c?si=ANQ9YFlswLHje4ZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!DOCTYPE html>
 <html lang="es">
