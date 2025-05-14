@@ -641,7 +641,7 @@ Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.git
   * Your projects
   * Your organizations
 
-![alt text](imagenes/image-23-2.png)
+![alt text](imagenes/image-23.png)
 
 (en este caso utilizamos el Your repositories)
 
