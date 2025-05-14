@@ -271,15 +271,15 @@ git branch -d tu-rama
 </body>
 </html>
 
-# Acerca de Gist
+<h1><span style="color:green">Acerca de Gist</span></h1>
+
 <p> Una de las funciones más innovadoras de GitHub es Gist, que permite almacenar y distribuir fragmentos de código sin necesidad de configurar un repositorio completo.Cadenas de código, scripts de bash, Markdown, archivos de texto y otros pequeños fragmentos de datos son alternativas aceptables a los fragmentos de código. Permite distribuir rápidamente un fragmento de código a otros para cualquier propósito, como una demostración, un tutorial o cualquier solución, sin necesidad de configurar un repositorio estándar. </p>
 
-# ¿Cómo crear un Gist?
-
+<h1><span style="color:green">¿Cómo crear un Gist?</span></h1>
 
  <b>*<h4>"Como alternativa,puedes arrastrar y soltar un archivo de texto desde tu escritorio directamente en el editor*"</h4></b>
 
-<h2>Paso 1: </h2>
+<h2><span style="color:green">Paso 1:</span></h2>
 
  Desde tu cuenta de [Github](https://github.com) , puedes elegir Nuevo gist en el Menú Crear o en el ícono más a la izquierda del ícono de tu perfil en la parte superior derecha de la ventana.
 
@@ -291,14 +291,14 @@ Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente hac
 
 ![alt text](imagenes/image-15.png) 
 
-<h2>Paso 2: </h2>
+<h2><span style="color:green">Paso 2:</span></h2>
 En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo en Html, puede añadir la extensión como codigoprueba.html para este caso. Luego se agrega el snippet que se refiere a un fragmento pequeño y reutilizable de código fuente, código binario o texto.
 <br>
 <br>
 
 ![alt text](imagenes/image-16.png)
 
-<h2>Paso 3: </h2>
+<h2><span style="color:green">Paso 3:</span></h2>
 Una vez agregado tu código en las líneas numeradas,haz clic en "Crear gist secreto" o en la flecha hacia abajo para ver más opciones. Puedes configurar tu código como público o secreto después de escribirlo. Si lo configuras como secreto, solo la persona con acceso a la URL de tu gist podrá verlo.
 <br>
 <br>
@@ -340,15 +340,15 @@ Para ver tus gists, navega y haz clic en tu foto de perfil para abrir el menú d
 </body>
 </html>
 
-# Acerca de Github Pages
+<h1><span style="color:green">Acerca de Github Pages</span></h1>
 
 GitHub Pages es un servicio de alojamiento u hospedaje web gratuito disponibilizado por GitHub. Este servicio nos permite alojar solo páginas web estáticas.
 
 **Observación:** Cabe señalar que un hospedaje web es el lugar o espacio que tendrá nuestra página web en internet y las páginas estáticas son, en su mayoria informativas haciendo uso de HTML y CSS. Es decir, paginas web dinámicas que incluye aspectos caracterizados por la interactividad y la funcionalidad a través de los lenguajes de programación (tales como: PHP, Java, Python, entre otros) y las bases de datos (como: MySql, Sql Server, MongoDb, etc.), no podran ser ejecutadas.
 
-# Pasos para publicar tu sitio web con Github pages
+<h1><span style="color:green">Pasos para publicar tu sitio web con Github pages</span></h1>
 
-## 1. Crea un repositorio para tu sitio 
+<h2><span style="color:green">1. Crea un repositorio para tu sitio</span></h2> 
 
 - Dirígete a GitHub e inicia sesión en tu cuenta.
 - Desde la página de [GitHub Pages](https://pages.github.com/) creamos nuestro repositorio en : **create a new public repository**
@@ -373,15 +373,16 @@ GitHub Pages es un servicio de alojamiento u hospedaje web gratuito disponibiliz
 
 ![alt text](imagenes/image-22.png)
 
-## 2. Clona el repositorio
+<h2><span style="color:green">2. Clona el repositorio</span></h2> 
+
 - Dirigite a la carpeta donde qieres guardar tu proyecto.
 - Clona el nuevo repositorio
 
-## 3. Sube los Archivos de tu Sitio Web:
+<h2><span style="color:green">3. Sube los Archivos de tu Sitio Web</span></h2> 
 
 - ube los archivos HTML, CSS, JavaScript, imágenes y cualquier otro recurso de tu sitio web al repositorio que acabas de crear. Puedes hacerlo a través de la interfaz web de GitHub (arrastrando y soltando los archivos) o utilizando Git desde tu línea de comandos.
 
-## 4. Configura GitHub Pages:
+<h2><span style="color:green">4. Configura GitHub Pages</span></h2>
 
 Ve a la página de tu repositorio en GitHub.
 
@@ -396,12 +397,13 @@ gh-pages: Una rama dedicada específicamente para los archivos del sitio web. Si
 <nombre_de_rama>/<nombre_de_carpeta>: Si tus archivos están en una carpeta específica dentro de una rama.
 Una vez que selecciones la fuente, GitHub comenzará a construir tu sitio web. Esto puede tardar unos minutos.
 
-## 5. Accede a tu Sitio Web Publicado:
+<h2><span style="color:green">5. Accede a tu Sitio Web Publicado</span></h2>
 
 Después de unos minutos, tu sitio web estará disponible en la URL: https://[tu_usuario].github.io/[nombre_del_repositorio]/
 Puedes encontrar la URL de tu sitio en la sección GitHub Pages de la configuración de tu repositorio.
 
-# Cómo mejorar tu sitio de páginas de GitHub
+<h1><span style="color:green">Cómo mejorar tu sitio de páginas de GitHub</span></h1>
+
 GitHub Pages no se limita a alojar su sitio; también ofrece una gran cantidad de funciones para mejorar y personalizar su presencia web:
 
 - **Habilitación de HTTPS :** GitHub Pages te permite proteger tu sitio web con HTTPS, lo que garantiza el cifrado de los datos de tus visitantes. Puedes encontrar información detallada sobre cómo habilitar HTTPS en tu sitio de GitHub Pages consultando la [documentación de GitHub Pages HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
