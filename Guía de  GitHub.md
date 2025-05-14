@@ -71,12 +71,14 @@ En esta guía se muestra cómo usar GitHub Issues para planear y realizar un seg
  *  Deshabilitación de propuestas.
 
  <h1><span style="color:green">Abrir una incidencia en blanco</span></h1>
- Primero, crea un problema. En este ejemplo se usará la interfaz de usuario de GitHub. 
+ Primero, crea un problema. En este ejemplo se usará la interfaz de usuario de GitHub.
+ 
  1. En GitHub, vaya a la página principal del repositorio.
  2. Debajo del nombre del repositorio, haz clic en  Cuestiones.
 
-![cuestiones](imagenes/image-1.png)
-3. Haga clic en Nuevo problema.
+![cuestiones](imagenes/image-1.png) 
+
+3. Haga clic en Nuevo problema. 
 4. En este ejemplo, comenzaremos con un problema en blanco. Tu repositorio puede usar plantillas de incidencias y formularios de incidencias para animar a los colaboradores a proporcionar información específica.
 
 <h1><span style="color:green">Cumplimentación de información</span></h1>
@@ -87,16 +89,19 @@ En esta guía se muestra cómo usar GitHub Issues para planear y realizar un seg
 
 <h1><span style="color:green">Adición de una lista de tareas</span></h1>
 
-uede ser útil dividir los problemas grandes en tareas más pequeñas o viceversa.Haga referencia a los problemas existentes por número de problema o URL. Puede usar texto sin formato para realizar un seguimiento de las tareas que no tienen un problema correspondiente y convertirlas en problemas más adelante.
+Puede ser útil dividir los problemas grandes en tareas más pequeñas o viceversa.Haga referencia a los problemas existentes por número de problema o URL. Puede usar texto sin formato para realizar un seguimiento de las tareas que no tienen un problema correspondiente y convertirlas en problemas más adelante.
 ![alt text](imagenes/image-3.png)
 
 <h1><span style="color:green">Adición de etiquetas</span></h1>
 Agregue una etiqueta para categorizar su problema. Por ejemplo,puede usar una etiqueta para indicar que un problema es un error que un colaborador por primera vez podría detectar. Los usuarios pueden filtrar
 
+ 
 ``` Git
  buggood first issue 
 ```
+
 Puede utilizar las etiquetas predeterminadas o puede crear una nueva etiqueta.
+
 ![alt text](imagenes/image-4.png)
 
 <h1><span style="color:green">Adición de hitos</span></h1>
@@ -109,13 +114,12 @@ Para comunicar la responsabilidad, puede asignar el problema a un miembro de su 
 
 ![alt text](imagenes/image-6.png)
 
-## Agregar la propuesta a un proyecto 
 <h1><span style="color:green">Agregar la propuesta a un proyecto  </span></h1>
 
 Puede agregar la incidencia a un proyecto existente y rellenar los metadatos del proyecto. 
+
 ![alt text](imagenes/image-7.png)
 
-## Envío de su problema 
 <h1><span style="color:green">Envío de su problema </span></h1>
 
 Haga clic en Enviar nueva incidencia para crear la misma. Tu propuesta tiene una URL única que puedes compartir con los miembros del equipo o hacer referencia a ella en otras propuestas o solicitudes de extracción.
@@ -392,7 +396,7 @@ En la barra lateral izquierda, busca la sección Code and automation y haz clic 
 
 En la sección Source, selecciona la rama desde la cual quieres publicar tu sitio web. Las opciones más comunes son:
 
-main (o master): Si los archivos de tu sitio web están directamente en la raíz de esta rama.
+Main (o master): Si los archivos de tu sitio web están directamente en la raíz de esta rama.
 gh-pages: Una rama dedicada específicamente para los archivos del sitio web. Si eliges esta opción, debes asegurarte de que tus archivos estén en la raíz de esta rama.
 <nombre_de_rama>/<nombre_de_carpeta>: Si tus archivos están en una carpeta específica dentro de una rama.
 Una vez que selecciones la fuente, GitHub comenzará a construir tu sitio web. Esto puede tardar unos minutos.
@@ -638,9 +642,9 @@ Un proyecto es una hoja de cálculo, un tablero de tareas y una hoja de ruta ada
 
 <h1><span style="color:green">¿Qué es GitHub Projects? </span></h1>
 
-Github projects es una funcionalidad de la platoforma github diseñado para facilitar la gestión de proyectos en el ámbito de la programación y desarrollo de software , es un tabero virtual donde se puede crear tarjetas para cada tarea , organizarla en columnas segun su estado y estas a asignarlas a miembros del equipo y establecer plazos.  
+Github projects es una funcionalidad de la platoforma github diseñado para facilitar la gestión de proyectos en el ámbito de la programación y desarrollo de software , es un tabero virtual donde se puede crear tarjetas para cada tarea , organizarla en columnas según su estado y estas a asignarlas a miembros del equipo y establecer plazos.  
 
-Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+Si quieres más infomarción entra a : [Acerca de los proyectos](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
 <h1><span style="color:green">Creando mi proyecto con GitHub Projects</span></h1>
  
@@ -673,7 +677,8 @@ Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.git
  7. Al acceder a la plantilla, veremos las siguientes columnas:
  * **"to do"** = por hacer 
  * **"In Progress"** = en progreso 
- * **"Done"** = hecho 
+ * **"Done"** = hecho
+
  En la esquina superior derecha se muestra un gráfico que indica el progreso del proyecto.
 
  ![alt text](imagenes/image-29.png)
