@@ -561,26 +561,26 @@ Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.git
   * Your projects
   * Your organizations
 
-![alt text](image-23-2.png)
+![alt text](imagenes/image-23-2.png)
 
 (en este caso utilizamos el Your repositories)
 
  2. Seleccionar el new para comenzar un repositorio  
 
- ![alt text](image-24.png)
+ ![alt text](imagenes/image-24.png)
 
  3. Después te pediré algunos datos sobre el proyecto, como el nombre, la descripción y su estado (público o privado).
 
- ![alt text](image-25.png)
+ ![alt text](imagenes/image-25.png)
 
  4. Una vez creado el repositorio, accedemos a la sección "Projects" para crear el proyecto.
 
- ![alt text](image-26.png)
+ ![alt text](imagenes/image-26.png)
 
  5. Luego, haz clic en donde dice "New project".
  6. Se mostrarán varias plantillas que te ayudarán a gestionar tu proyecto de forma más     eficiente. 
 
- ![alt text](image-28.png)
+ ![alt text](imagenes/image-28.png)
 
  7. Al acceder a la plantilla, veremos las siguientes columnas:
  * **"to do"** = por hacer 
@@ -588,6 +588,6 @@ Si quieres mas infomarción entra a : [Acerca de los proyectos](https://docs.git
  * **"Done"** = hecho 
  En la esquina superior derecha se muestra un gráfico que indica el progreso del proyecto.
 
- ![alt text](image-29.png)
+ ![alt text](imagenes/image-29.png)
 
 **Asi es como puedes crear tu proyecto en GitHub.**
