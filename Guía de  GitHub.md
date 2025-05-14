@@ -727,7 +727,10 @@ Después de haber configurado las tareas y subtareas, obtendremos una vista estr
 
 [ejemplo_projects](https://github.com/users/eduardovalenzuela3107/projects/3/views/1)
 
+
 **5. Conclusión**
 Y eso sería todo respecto al uso eficiente y eficaz de GitHub Projects para el desarrollo colaborativo de un proyecto. Esta herramienta permite organizar tareas, asignar responsabilidades y realizar un seguimiento claro del progreso, lo que contribuye significativamente a una gestión colectiva más ordenada y productiva.
 
+**video recomendado**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JpKzBuYtkMU?si=cCmMTzszdFPET4_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
