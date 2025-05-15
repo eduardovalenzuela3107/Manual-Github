@@ -328,7 +328,12 @@ Para ver tus gists, navega y haz clic en tu foto de perfil para abrir el menú d
 <br>
 <br>
 
+*Video recomendado:* [Tutorial_GitHubGist](https://www.youtube.com/watch?v=RmQuRzzK4e8
+)
+
 *Para más información:* [Ver documentación oficial](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
+
+
 
 </style>
 </head>
@@ -381,12 +386,50 @@ GitHub Pages es un servicio de alojamiento u hospedaje web gratuito disponibiliz
 
 - Dirigite a la carpeta donde qieres guardar tu proyecto.
 - Clona el nuevo repositorio
+- Abrimos en Git y nos ubicamos en nuestra carpeta
 
-<h2><span style="color:green">3. Sube los Archivos de tu Sitio Web</span></h2> 
+```
+git clone https://github.com/josuesqrt/josuesqrt.github.io.git
 
-- ube los archivos HTML, CSS, JavaScript, imágenes y cualquier otro recurso de tu sitio web al repositorio que acabas de crear. Puedes hacerlo a través de la interfaz web de GitHub (arrastrando y soltando los archivos) o utilizando Git desde tu línea de comandos.
+```
+<h2><span style="color:green">3. Ingresa a tu folder del proyecto y crea un index.html</span></h2> 
 
-<h2><span style="color:green">4. Configura GitHub Pages</span></h2>
+- Podemos crear un index desde Visual Studio Code de la siguiente manera:
+
+```
+code index.html
+
+```
+- Agregamos html:5 para visualizar el código y luego guardamos,se creará la carpeta por defecto.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual-Github</title>
+</head>
+<body>
+    <p>Realizando una pagina web en Github pages para Lp2</p>
+
+</body>
+</html>
+```
+![alt text](imagenes/image-p1.png)
+
+<h2><span style="color:green">4. Sube los Archivos de tu Sitio Web</span></h2> 
+
+- Sube los archivos HTML, CSS, JavaScript, imágenes y cualquier otro recurso de tu sitio web al repositorio que acabas de crear. Puedes hacerlo a través de la interfaz web de GitHub (arrastrando y soltando los archivos) o utilizando Git desde tu línea de comandos.
+
+- Puedes realizar tu push con los siguiente comandos :
+```
+git add --all
+git commit -m "iniciando web"
+git push -u origin main
+```
+
+<h2><span style="color:green">5. Configura GitHub Pages</span></h2>
 
 Ve a la página de tu repositorio en GitHub.
 
@@ -401,10 +444,13 @@ gh-pages: Una rama dedicada específicamente para los archivos del sitio web. Si
 <nombre_de_rama>/<nombre_de_carpeta>: Si tus archivos están en una carpeta específica dentro de una rama.
 Una vez que selecciones la fuente, GitHub comenzará a construir tu sitio web. Esto puede tardar unos minutos.
 
-<h2><span style="color:green">5. Accede a tu Sitio Web Publicado</span></h2>
+<h2><span style="color:green">6. Accede a tu Sitio Web Publicado</span></h2>
 
-Después de unos minutos, tu sitio web estará disponible en la URL: https://[tu_usuario].github.io/[nombre_del_repositorio]/
-Puedes encontrar la URL de tu sitio en la sección GitHub Pages de la configuración de tu repositorio.
+- Después de unos minutos, tu sitio web estará disponible en la URL: https://username.github.io
+- Puedes encontrar la URL de tu sitio en la sección GitHub Pages de la configuración de tu repositorio.
+- Puedes ingresar a partir de esta URL también : https://josuesqrt.github.io/index.html
+
+![alt text](imagenes/image-p2.png)
 
 <h1><span style="color:green">Cómo mejorar tu sitio de páginas de GitHub</span></h1>
 
@@ -413,6 +459,10 @@ GitHub Pages no se limita a alojar su sitio; también ofrece una gran cantidad d
 - **Habilitación de HTTPS :** GitHub Pages te permite proteger tu sitio web con HTTPS, lo que garantiza el cifrado de los datos de tus visitantes. Puedes encontrar información detallada sobre cómo habilitar HTTPS en tu sitio de GitHub Pages consultando la [documentación de GitHub Pages HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
 - **Dominios personalizados :** Si quieres usar tu propio nombre de dominio en lugar de la URL predeterminada de GitHub Pages, GitHub te lo pone fácil. Puedes configurar un dominio personalizado siguiendo los pasos de la [documentación de dominios personalizados de GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) . 
 - **Añadir un tema de Jekyll :** GitHub Pages se integra a la perfección con Jekyll, un popular generador de sitios web estáticos. Puedes aplicar temas de Jekyll a tu sitio para lograr una apariencia profesional y elegante. Para más información sobre el uso de Jekyll con GitHub Pages, consulta la [documentación de Jekyll en GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
+
+*Video recomendado:* [Tutorial_GitHubPages](
+https://www.youtube.com/watch?v=sLTNgxxSBR4)
+
 
 *Para más información:* [Ver documentación oficial](https://docs.github.com/fr/pages)
 
@@ -653,13 +703,13 @@ Si quieres más infomarción entra a : [Acerca de los proyectos](https://docs.gi
   * Your projects
   * Your organizations
 
-![alt text](imagenes/image-23.png)
+![alt text](imagenes/image-30.png)
 
 (en este caso utilizamos el Your repositories)
 
  2. Seleccionar el new para comenzar un repositorio  
 
- ![alt text](imagenes/image-24.png)
+ ![alt text](imagenes/image-31.png)
 
  3. Después te pediré algunos datos sobre el proyecto, como el nombre, la descripción y su estado (público o privado).
 
