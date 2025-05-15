@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guía de GitHub.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+<pre><code>.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-container {
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título 3 - Creativo con Fondo */
+.titulo-3 {
+  text-align: center;
+  background:rgb(33, 203, 17);
+  background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+  padding: 30px 20px;
+  border-radius: 6px;
+  color: white;
+}
+
+.titulo-3 h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+  letter-spacing: 2px;
+}
+
+.titulo-3 p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+</code></pre>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Issues</h1>
+        <p>Guía rápida para Issues en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Introducción</span></h1>
+En esta guía se muestra cómo usar GitHub Issues para planear y realizar un seguimiento de un trabajo. En esta guía, creará una nueva incidencia y agregará una lista de tareas para realizar un seguimiento de las subtareas. También aprenderá a agregar etiquetas, hitos, personas asignadas y proyectos para comunicar metadatos sobre su problema. 
+<h1><span style="color:green">Prerrequisitos</span></h1>
+ * Creación de un nuevo repositorio.
+ *  Deshabilitación de propuestas.
+ <h1><span style="color:green">Abrir una incidencia en blanco</span></h1>
+ Primero, crea un problema. En este ejemplo se usará la interfaz de usuario de GitHub.
+<ol>
+<li>En GitHub, vaya a la página principal del repositorio.</li>
+<li>Debajo del nombre del repositorio, haz clic en  Cuestiones.</li>
+</ol>
+<p><img src="imagenes/image-1.png" alt="cuestiones"></p>
+<ol start="3">
+<li>Haga clic en Nuevo problema.</li>
+<li>En este ejemplo, comenzaremos con un problema en blanco. Tu repositorio puede usar plantillas de incidencias y formularios de incidencias para animar a los colaboradores a proporcionar información específica.</li>
+</ol>
+<h1><span style="color:green">Cumplimentación de información</span></h1>
+* Dale a tu número un título descriptivo.
+* Agregue una descripción que explique el propósito del problema, incluidos los detalles que puedan ayudar a resolverlo.
+<p><img src="imagenes/image-2.png" alt="alt text"></p>
+<h1><span style="color:green">Adición de una lista de tareas</span></h1>
+<p>Puede ser útil dividir los problemas grandes en tareas más pequeñas o viceversa.Haga referencia a los problemas existentes por número de problema o URL. Puede usar texto sin formato para realizar un seguimiento de las tareas que no tienen un problema correspondiente y convertirlas en problemas más adelante.
+<img src="imagenes/image-3.png" alt="alt text"></p>
+<h1><span style="color:green">Adición de etiquetas</span></h1>
+Agregue una etiqueta para categorizar su problema. Por ejemplo,puede usar una etiqueta para indicar que un problema es un error que un colaborador por primera vez podría detectar. Los usuarios pueden filtrar
+<pre class="hljs"><code><div> buggood first issue 
+</div></code></pre>
+<p>Puede utilizar las etiquetas predeterminadas o puede crear una nueva etiqueta.</p>
+<p><img src="imagenes/image-4.png" alt="alt text"></p>
+<h1><span style="color:green">Adición de hitos</span></h1>
+Puede agregar un hito para realizar un seguimiento del problema como parte de un objetivo basado en fechas. Un hito mostrará el progreso de los problemas a medida que se acerque la fecha objetivo.
+<p><img src="imagenes/image-5.png" alt="alt text"></p>
+<h1><span style="color:green">Asignación del problema </span></h1>
+Para comunicar la responsabilidad, puede asignar el problema a un miembro de su organización.
+<p><img src="imagenes/image-6.png" alt="alt text"></p>
+<h1><span style="color:green">Agregar la propuesta a un proyecto  </span></h1>
+<p>Puede agregar la incidencia a un proyecto existente y rellenar los metadatos del proyecto.</p>
+<p><img src="imagenes/image-7.png" alt="alt text"></p>
+<h1><span style="color:green">Envío de su problema </span></h1>
+<p>Haga clic en Enviar nueva incidencia para crear la misma. Tu propuesta tiene una URL única que puedes compartir con los miembros del equipo o hacer referencia a ella en otras propuestas o solicitudes de extracción.</p>
+<h1><span style="color:green">Comunicante </span></h1>
+<p>Una vez creado el problema, continúe la conversación agregando comentarios al problema. Puedes @mention colaboradores o equipos para llamar su atención sobre un comentario.
+<img src="imagenes/image-8.png" alt="alt text"></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+<pre><code>.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-container {
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título 3 - Creativo con Fondo */
+.titulo-3 {
+  text-align: center;
+  background:rgb(33, 203, 17);
+  background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+  padding: 30px 20px;
+  border-radius: 6px;
+  color: white;
+}
+
+.titulo-3 h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+  letter-spacing: 2px;
+}
+
+.titulo-3 p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+</code></pre>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Pull Request</h1>
+        <p>Guía rápida para Pull Request en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Introducción</span></h1>
+Una solicitud de cambios es una propuesta para combinar un conjunto de cambios de una rama con otra. En una solicitud de cambios, los colaboradores pueden revisar y analizar el conjunto propuesto de cambios antes de integrar los cambios en el código base principal. Las solicitudes de cambios muestran las diferencias o la diferencias entre el contenido de la rama de origen y el contenido de la rama de destino.
+<p>Puedes crear solicitudes de incorporación de cambios en GitHub.com, con GitHub Desktop, en GitHub Codespaces, en GitHub Mobile y al usar GitHub CLI.</p>
+<h1><span style="color:green">¿Por qué evitar cambios directos en la rama principal?</span></h1>
+Modificar directamente la rama principal puede ocasionar varios problemas, como:
+<ul>
+<li>
+<p>Conflictos de código: Si varios colaboradores editan los mismos archivos en main, se pueden sobrescribir cambios entre sí.</p>
+</li>
+<li>
+<p>Errores en producción: Cambios no revisados o sin probar pueden introducir errores en versiones en vivo del proyecto.</p>
+</li>
+<li>
+<p>Falta de trazabilidad: Sin revisiones, es difícil verificar la calidad del código o entender el propósito de un cambio.</p>
+</li>
+<li>
+<p>Bloqueo del flujo de trabajo: Si la rama principal se rompe, todos los colaboradores pueden verse afectados.</p>
+</li>
+</ul>
+<h1><span style="color:green">Pasos para crear y trabajar con un Pull Request</span></h1>
+<ol>
+<li>Crear una nueva rama local
+Antes de comenzar una nueva funcionalidad o corrección, crea una rama desde la rama principal:</li>
+</ol>
+<pre class="hljs"><code><div>git checkout main
+git pull origin main
+git checkout -b developer01
+</div></code></pre>
+<ol start="2">
+<li>Realizar cambios y hacer commits
+Haz los cambios necesarios y guarda tu progreso con commits claros y atómicos:</li>
+</ol>
+<pre class="hljs"><code><div>git add .
+git commit -m &quot;Agrega validación de formulario de login&quot;
+</div></code></pre>
+<ol start="3">
+<li>Subir la rama al repositorio remoto (GitHub)
+Una vez que los cambios están listos, sube la rama:</li>
+</ol>
+<pre class="hljs"><code><div>git push -u origin developer01
+</div></code></pre>
+<ol start="4">
+<li>Crear el Pull Request (PR)</li>
+</ol>
+<ul>
+<li>Ve al repositorio en GitHub.</li>
+<li>Verás un botón para “Compare &amp; Pull Request” al subir la nueva rama.</li>
+<li>Describe los cambios en el cuerpo del PR: qué hiciste, por qué, y cualquier detalle útil.</li>
+<li>Asigna revisores, etiquetas y vincula el PR a una issue si corresponde.</li>
+</ul>
+<h1><span style="color:green">¿Cómo se fusiona un Pull Request?</span></h1>
+<ol>
+<li>Comparación y Revisión Final<br>
+Los revisores del equipo deben confirmar que los cambios funcionen como se espera, no rompen otras partes del sistema y cumplen con los estándares del proyecto. Además, se puede ver la comparación de cambios entre ramas en la pestaña del PR, lo que facilita detectar errores o mejoras antes del merge.</li>
+<li>Resolver Conflictos<br>
+GitHub detecta automáticamente si hay conflictos entre la rama del PR y la rama base. Dos posibles situaciones:</li>
+</ol>
+<ul>
+<li>Sin conflictos: Se muestra una marca verde y GitHub permite fusionar directamente.</li>
+<li>Con conflictos: Aparecerá un mensaje indicando que debes resolver conflictos manualmente.</li>
+</ul>
+<ol start="3">
+<li>Opciones de fusión</li>
+</ol>
+<ul>
+<li>Merge Commit (por defecto): Crea un commit adicional de fusión. Útil para mantener el historial completo.</li>
+<li>Squash and Merge: Une todos los commits en uno solo. Recomendado para mantener un historial más limpio y legible.</li>
+<li>Rebase and Merge: Aplica los commits uno por uno sobre la rama base. Útil para mantener un historial lineal.</li>
+</ul>
+<ol start="4">
+<li>Eliminación de la Rama
+Una vez que el PR ha sido fusionado:</li>
+</ol>
+<ul>
+<li>GitHub ofrecerá un botón para eliminar la rama remota usada en el PR.</li>
+<li>Esto no elimina la rama local en tu máquina, pero ayuda a mantener el repositorio remoto limpio y organizado.</li>
+<li>Si quieres eliminarla localmente también:</li>
+</ul>
+<pre class="hljs"><code><div>git branch -d tu-rama
+</div></code></pre>
+<p><em>Para más información:</em> <a href="https://docs.github.com/es/pull-requests">Pull-Request</a></p>
+<ul>
+<li><em>Video de ayuda:</em></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs?si=SVpOZHBZuyOQQWtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Gist</h1>
+        <p>Guía rápida para Gist en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Acerca de Gist</span></h1>
+<p> Una de las funciones más innovadoras de GitHub es Gist, que permite almacenar y distribuir fragmentos de código sin necesidad de configurar un repositorio completo.Cadenas de código, scripts de bash, Markdown, archivos de texto y otros pequeños fragmentos de datos son alternativas aceptables a los fragmentos de código. Permite distribuir rápidamente un fragmento de código a otros para cualquier propósito, como una demostración, un tutorial o cualquier solución, sin necesidad de configurar un repositorio estándar. </p>
+<h1><span style="color:green">¿Cómo crear un Gist?</span></h1>
+<p><b><em><h4>&quot;Como alternativa,puedes arrastrar y soltar un archivo de texto desde tu escritorio directamente en el editor</em>&quot;</h4></b></p>
+<h2><span style="color:green">Paso 1:</span></h2>
+<p>Desde tu cuenta de <a href="https://github.com">Github</a> , puedes elegir Nuevo gist en el Menú Crear o en el ícono más a la izquierda del ícono de tu perfil en la parte superior derecha de la ventana.</p>
+<p><img src="imagenes/image-9.png" alt="alt text"></p>
+<p>Si ya estás en el sitio web de GitHub gist , puedes crear gists fácilmente haciendo clic en el Menú.
+<br></p>
+<p><img src="imagenes/image-15.png" alt="alt text"></p>
+<h2><span style="color:green">Paso 2:</span></h2>
+En la sección de descripción del gist, puede introducir una descripción del gist (opcional).En la sección <b>"Nombre de archivo con extensión"</b>, introduzca el nombre del archivo. El nombre del archivo debe incluir la extensión, según el gist que cree. Por ejemplo, si crea un gist de ejemplo en Html, puede añadir la extensión como codigoprueba.html para este caso. Luego se agrega el snippet que se refiere a un fragmento pequeño y reutilizable de código fuente, código binario o texto.
+<br>
+<br>
+<p><img src="imagenes/image-16.png" alt="alt text"></p>
+<h2><span style="color:green">Paso 3:</span></h2>
+Una vez agregado tu código en las líneas numeradas,haz clic en "Crear gist secreto" o en la flecha hacia abajo para ver más opciones. Puedes configurar tu código como público o secreto después de escribirlo. Si lo configuras como secreto, solo la persona con acceso a la URL de tu gist podrá verlo.
+<br>
+<br>
+<p><img src="imagenes/image-17.png" alt="alt text"></p>
+<p>Tu gist de GitHub ya está listo para compartir con quien quieras. Puedes copiar el código de incrustación de tu gist si quieres incrustarlo.
+Puedes usar varios métodos para compartir un resumen como:</p>
+<ul>
+<li>Incrustarlo en un sitio web.</li>
+<li>Copia un enlace para compartir y enviar.</li>
+<li>Clonar con Git o consultar con SVN usando la dirección web del repositorio (Clonar mediante HTTPS).</li>
+<li>Clonación con una clave SSH y una frase de contraseña desde la configuración de GitHub (Clonar mediante SSH).
+<br>
+<br></li>
+</ul>
+<p><img src="imagenes/image-18.png" alt="alt text"></p>
+<p>Para ver tus gists, navega y haz clic en tu foto de perfil para abrir el menú desplegable y seleccionar Tus gists .
+<br></p>
+<p><img src="imagenes/image-19.png" alt="alt text">
+<br>
+<br></p>
+<p><em>Video recomendado:</em> <a href="https://www.youtube.com/watch?v=RmQuRzzK4e8">Tutorial_GitHubGist</a></p>
+<p><em>Para más información:</em> <a href="https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists">Ver documentación oficial</a></p>
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>GitHub pages</h1>
+        <p>Guía rápida para GitHub Pages en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Acerca de Github Pages</span></h1>
+<p>GitHub Pages es un servicio de alojamiento u hospedaje web gratuito disponibilizado por GitHub. Este servicio nos permite alojar solo páginas web estáticas.</p>
+<p><strong>Observación:</strong> Cabe señalar que un hospedaje web es el lugar o espacio que tendrá nuestra página web en internet y las páginas estáticas son, en su mayoria informativas haciendo uso de HTML y CSS. Es decir, paginas web dinámicas que incluye aspectos caracterizados por la interactividad y la funcionalidad a través de los lenguajes de programación (tales como: PHP, Java, Python, entre otros) y las bases de datos (como: MySql, Sql Server, MongoDb, etc.), no podran ser ejecutadas.</p>
+<h1><span style="color:green">Pasos para publicar tu sitio web con Github pages</span></h1>
+<h2><span style="color:green">1. Crea un repositorio para tu sitio</span></h2> 
+<ul>
+<li>Dirígete a GitHub e inicia sesión en tu cuenta.</li>
+<li>Desde la página de <a href="https://pages.github.com/">GitHub Pages</a> creamos nuestro repositorio en : <strong>create a new public repository</strong></li>
+<li>En esta página, en la caja Nombre del Repositorio, digita el nombre para tu repositorio de código. Si estás creando un sitio para un usuario o una organización, tu repositorio debe llamarse  <em>«usuario»</em>.github.io  o <em>«organización»</em>.github.io ,por ejemplo : <em>josuesqrt.github.io</em></li>
+<li>Llena una descripción para decir lo que tu repositorio va a contener. Tu pantalla debe mostrar algo como esto:</li>
+</ul>
+<p><img src="imagenes/image-20.png" alt="alt text">
+<br></p>
+<ul>
+<li>Asegúrate de que la visibilidad del repositorio esté configurada como Pública..</li>
+<li>Finalmente, haz clic en Crear repositorio
+<br>
+<br></li>
+</ul>
+<p><img src="imagenes/image-21.png" alt="alt text"></p>
+<br>
+<ul>
+<li>Esto debería llevarte a la siguiente página:</li>
+</ul>
+<br>
+<p><img src="imagenes/image-22.png" alt="alt text"></p>
+<h2><span style="color:green">2. Clona el repositorio</span></h2> 
+<ul>
+<li>Dirigite a la carpeta donde qieres guardar tu proyecto.</li>
+<li>Clona el nuevo repositorio</li>
+<li>Abrimos en Git y nos ubicamos en nuestra carpeta</li>
+</ul>
+<pre class="hljs"><code><div>git clone https://github.com/josuesqrt/josuesqrt.github.io.git
+
+</div></code></pre>
+<h2><span style="color:green">3. Ingresa a tu folder del proyecto y crea un index.html</span></h2> 
+<ul>
+<li>Podemos crear un index desde Visual Studio Code de la siguiente manera:</li>
+</ul>
+<pre class="hljs"><code><div>code index.html
+
+</div></code></pre>
+<ul>
+<li>Agregamos html:5 para visualizar el código y luego guardamos,se creará la carpeta por defecto.</li>
+</ul>
+<pre class="hljs"><code><div>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Manual-Github&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Realizando una pagina web en Github pages para Lp2&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</div></code></pre>
+<p><img src="imagenes/image-p1.png" alt="alt text"></p>
+<h2><span style="color:green">4. Sube los Archivos de tu Sitio Web</span></h2> 
+<ul>
+<li>
+<p>Sube los archivos HTML, CSS, JavaScript, imágenes y cualquier otro recurso de tu sitio web al repositorio que acabas de crear. Puedes hacerlo a través de la interfaz web de GitHub (arrastrando y soltando los archivos) o utilizando Git desde tu línea de comandos.</p>
+</li>
+<li>
+<p>Puedes realizar tu push con los siguiente comandos :</p>
+</li>
+</ul>
+<pre class="hljs"><code><div>git add --all
+git commit -m &quot;iniciando web&quot;
+git push -u origin main
+</div></code></pre>
+<h2><span style="color:green">5. Configura GitHub Pages</span></h2>
+<p>Ve a la página de tu repositorio en GitHub.</p>
+<p>Haz clic en la pestaña Settings.</p>
+<p>En la barra lateral izquierda, busca la sección Code and automation y haz clic en Pages.</p>
+<p>En la sección Source, selecciona la rama desde la cual quieres publicar tu sitio web. Las opciones más comunes son:</p>
+<p>Main (o master): Si los archivos de tu sitio web están directamente en la raíz de esta rama.
+gh-pages: Una rama dedicada específicamente para los archivos del sitio web. Si eliges esta opción, debes asegurarte de que tus archivos estén en la raíz de esta rama.
+&lt;nombre_de_rama&gt;/&lt;nombre_de_carpeta&gt;: Si tus archivos están en una carpeta específica dentro de una rama.
+Una vez que selecciones la fuente, GitHub comenzará a construir tu sitio web. Esto puede tardar unos minutos.</p>
+<h2><span style="color:green">6. Accede a tu Sitio Web Publicado</span></h2>
+<ul>
+<li>Después de unos minutos, tu sitio web estará disponible en la URL: https://username.github.io</li>
+<li>Puedes encontrar la URL de tu sitio en la sección GitHub Pages de la configuración de tu repositorio.</li>
+<li>Puedes ingresar a partir de esta URL también : https://josuesqrt.github.io/index.html</li>
+</ul>
+<p><img src="imagenes/image-p2.png" alt="alt text"></p>
+<h1><span style="color:green">Cómo mejorar tu sitio de páginas de GitHub</span></h1>
+<p>GitHub Pages no se limita a alojar su sitio; también ofrece una gran cantidad de funciones para mejorar y personalizar su presencia web:</p>
+<ul>
+<li><strong>Habilitación de HTTPS :</strong> GitHub Pages te permite proteger tu sitio web con HTTPS, lo que garantiza el cifrado de los datos de tus visitantes. Puedes encontrar información detallada sobre cómo habilitar HTTPS en tu sitio de GitHub Pages consultando la <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https">documentación de GitHub Pages HTTPS</a></li>
+<li><strong>Dominios personalizados :</strong> Si quieres usar tu propio nombre de dominio en lugar de la URL predeterminada de GitHub Pages, GitHub te lo pone fácil. Puedes configurar un dominio personalizado siguiendo los pasos de la <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">documentación de dominios personalizados de GitHub Pages</a> .</li>
+<li><strong>Añadir un tema de Jekyll :</strong> GitHub Pages se integra a la perfección con Jekyll, un popular generador de sitios web estáticos. Puedes aplicar temas de Jekyll a tu sitio para lograr una apariencia profesional y elegante. Para más información sobre el uso de Jekyll con GitHub Pages, consulta la <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">documentación de Jekyll en GitHub Pages</a></li>
+</ul>
+<p><em>Video recomendado:</em> <a href="https://www.youtube.com/watch?v=sLTNgxxSBR4">Tutorial_GitHubPages</a></p>
+<p><em>Para más información:</em> <a href="https://docs.github.com/fr/pages">Ver documentación oficial</a></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+<pre><code>.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-container {
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título 3 - Creativo con Fondo */
+.titulo-3 {
+  text-align: center;
+  background:rgb(33, 203, 17);
+  background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+  padding: 30px 20px;
+  border-radius: 6px;
+  color: white;
+}
+
+.titulo-3 h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+  letter-spacing: 2px;
+}
+
+.titulo-3 p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+</code></pre>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>Codespaces</h1>
+        <p>Guía rápida para Codespaces en GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Introducción</span></h1>
+<p>GitHub Codespaces es un entorno de desarrollo en la nube totalmente integrado con GitHub, que te permite comenzar a programar de inmediato, sin necesidad de instalar herramientas o dependencias en tu equipo local. Cada codespace es una instancia de entorno de desarrollo basada en contenedores Docker que se ejecuta en una máquina virtual en la infraestructura de GitHub.<br>
+Cada espacio de código que crees se aloja en GitHub en un contenedor Docker, ejecutándose en una máquina virtual. Puedes elegir entre varios tipos de máquinas virtuales, desde 2 núcleos, 8 GB de RAM y 32 GB de almacenamiento, hasta 32 núcleos, 64 GB de RAM y 128 GB de almacenamiento.</p>
+<h1><span style="color:green">Uso de Github Codespaces</span></h1>
+<p>GitHub Codespaces te permite crear un espacio de código (codespace) a partir de una plantilla  o de cualquier rama o commit de un repositorio existente. Esto te da flexibilidad para empezar desde cero o trabajar con una versión específica del código.</p>
+<ol>
+<li>Crear un codespace desde un repositorio:</li>
+</ol>
+<ul>
+<li>Ve al repositorio en GitHub.</li>
+<li>Haz clic en el botón verde &quot;Code&quot; y luego en &quot;Codespaces&quot;.<br>
+<img src="imagenes/image-10.PNG" alt="alt text"></li>
+<li>Selecciona &quot;New codespace&quot; y elige la rama desde la cual quieres iniciar.<br>
+<img src="imagenes/image-11.PNG" alt="alt text"></li>
+<li>GitHub creará el entorno de desarrollo automáticamente.<br>
+<img src="imagenes/image-12.PNG" alt="alt text"></li>
+</ul>
+<ol start="2">
+<li>Crear un codespace desde una plantilla:</li>
+</ol>
+<ul>
+<li>Ve a github.com/codespaces y elige una plantilla prediseñada o en blanco.<br>
+<img src="imagenes/image-13.PNG" alt="alt text"></li>
+<li>Ideal para crear proyectos nuevos con una base preconfigurada.</li>
+</ul>
+<ol start="3">
+<li>Reabrir un codespace existente:</li>
+</ol>
+<ul>
+<li>Desde GitHub, visita la pestaña &quot;Codespaces&quot; de tu perfil o del repositorio.</li>
+<li>Allí verás todos tus codespaces disponibles y podrás reabrir cualquiera.<br>
+<img src="imagenes/image-14.PNG" alt="alt text"></li>
+</ul>
+<h1><span style="color:green">Personalización de GitHub Codespaces</span></h1>
+<p>GitHub Codespaces permite crear entornos de desarrollo personalizados y consistentes para cada proyecto. Esto es especialmente útil cuando se trabaja en equipo o se manejan múltiples proyectos con requisitos técnicos distintos. Existen varias formas de adaptar el entorno de tu codespace a tus necesidades y preferencias, ya sea a nivel de proyecto o a nivel de usuario.</p>
+<h2><span style="color:green">Configuración del contenedor de desarrollo (devcontainer.json)</span></h2>
+<p>La forma más robusta de personalizar un codespace es mediante la configuración de contenedores de desarrollo. Esto se logra añadiendo una carpeta .devcontainer/ dentro del repositorio, con uno o más archivos de configuración, principalmente devcontainer.json.<br>
+Esto permite definir de forma explícita:</p>
+<ul>
+<li>El sistema operativo base (imagen de contenedor)</li>
+<li>Las herramientas, bibliotecas o lenguajes a instalar automáticamente</li>
+<li>Extensiones de Visual Studio Code a incluir</li>
+<li>Comandos de instalación o configuración que se ejecutan al iniciar el entorno</li>
+<li>Variables de entorno y ajustes específicos del proyecto</li>
+</ul>
+<h2><span style="color:green">Uso de Dotfiles</span></h2>
+<p>Además de configurar el entorno del proyecto, los usuarios pueden personalizar su codespace de forma individual utilizando dotfiles. GitHub permite enlazar un repositorio público de dotfiles en tu cuenta, que se aplicará automáticamente a cualquier codespace que crees.
+Los dotfiles permiten:</p>
+<ul>
+<li>Configurar preferencias de shell (.bashrc, .zshrc)</li>
+<li>Definir alias y funciones personalizadas</li>
+<li>Instalar herramientas o configuraciones propias</li>
+<li>Aplicar ajustes de Git, como nombre de usuario, editor predeterminado, etc.<br>
+Puedes configurar esto desde tu perfil de GitHub, en la sección Codespaces &gt; Dotfiles, y GitHub se encargará de clonar y aplicar el repositorio cada vez que inicies un nuevo codespace.</li>
+</ul>
+<h2><span style="color:green">Sincronización de configuración de VS Code</span></h2>
+<p>Si usas Visual Studio Code, también puedes activar la sincronización de configuración para mantener tu experiencia uniforme entre tu instalación local y los codespaces. Esta función sincroniza:</p>
+<ul>
+<li>Temas y apariencia</li>
+<li>Atajos de teclado</li>
+<li>Fragmentos de código (snippets)</li>
+<li>Configuración del editor (settings.json)</li>
+<li>Extensiones instaladas<br>
+Esto es especialmente útil si trabajas desde diferentes dispositivos o accedes a Codespaces desde el navegador, ya que te sentirás como si estuvieras trabajando en tu equipo local.</li>
+</ul>
+<h1><span style="color:green">Facturación y uso de Codespaces</span></h1>
+<ul>
+<li>
+<p>Cuentas personales
+Todas las cuentas personales en GitHub, ya sean del plan Gratuito o Pro, incluyen una cuota mensual de uso gratuito de GitHub Codespaces. Puedes comenzar a usar esta función sin necesidad de configurar nada adicional ni proporcionar información de pago.<br>
+Si creas un codespace desde un repositorio que pertenece a una organización, el consumo puede facturarse directamente a la organización si esta lo permite. En caso contrario, el uso se cobrará a tu cuenta personal. Una vez que superas el uso gratuito mensual, puedes continuar utilizando Codespaces agregando un método de pago y configurando un límite de gasto en tu cuenta.</p>
+</li>
+<li>
+<p>Organizaciones y empresas
+Las organizaciones con planes GitHub Team o GitHub Enterprise pueden cubrir los costos de GitHub Codespaces para sus miembros y colaboradores. Esto se aplica específicamente a los codespaces creados a partir de repositorios propiedad de la organización.<br>
+Cuando un codespace es facturado a la organización, esta se convierte en su propietaria y tiene la capacidad de eliminarlo si lo considera necesario. Además, las organizaciones pueden establecer límites de gasto y decidir quién es responsable de los pagos. La posibilidad de crear codespaces desde un repositorio de la organización puede depender de la visibilidad del repositorio y de la configuración establecida por la propia organización o empresa matriz.</p>
+</li>
+</ul>
+<h1><span style="color:green">Casos de uso prácticos de GitHub Codespaces</span></h1>
+<p>GitHub Codespaces no solo agiliza la configuración del entorno, sino que abre posibilidades para escenarios de trabajo que antes requerían mucho tiempo o infraestructura adicional. A continuación encontrarás ejemplos de cómo aprovechar Codespaces en distintas situaciones reales:</p>
+<ol>
+<li>Revisión rápida de Pull Requests:<br>
+Al recibir una pull request, puedes abrir un codespace directamente desde esa rama para revisar, probar y depurar los cambios en un entorno aislado. Esto elimina la necesidad de clonar el repositorio, cambiar de rama o instalar dependencias localmente.</li>
+<li>Onboarding de nuevos desarrolladores:<br>
+Los nuevos miembros del equipo pueden empezar a trabajar de inmediato sin preocuparse por configurar el entorno de desarrollo. Con un codespace preconfigurado, todo está listo: lenguajes, dependencias, extensiones y configuraciones específicas del proyecto.</li>
+<li>Contribuciones a proyectos open source:<br>
+Los contribuidores externos pueden usar Codespaces para explorar, editar y probar proyectos open source sin necesidad de clonar el repositorio en su máquina local. Esto es ideal para quienes quieren aportar sin modificar su entorno local.</li>
+<li>Pruebas en entornos aislados:<br>
+Al crear un codespace, puedes replicar entornos de producción o testing sin afectar tu configuración local. Esto es útil para ejecutar pruebas específicas, depurar errores o verificar compatibilidades en diferentes versiones.</li>
+<li>Desarrollo desde cualquier lugar:<br>
+Como Codespaces se ejecuta en la nube y está disponible desde el navegador o VS Code, puedes continuar tu trabajo desde cualquier dispositivo con conexión a Internet, sin depender de tu equipo habitual.</li>
+<li>Trabajo con múltiples proyectos:<br>
+Si trabajas en diferentes proyectos con stacks distintos, puedes crear un codespace personalizado para cada uno. Esto evita conflictos de versiones de dependencias y mantiene tu entorno local limpio.</li>
+</ol>
+<p><em>Para más información:</em> <a href="https://docs.github.com/en/codespaces">Codespaces</a></p>
+<ul>
+<li><em>Video de ayuda:</em></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cO-oFpePy3c?si=ANQ9YFlswLHje4ZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título Creativo con Fondo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:rgba(252, 252, 255, 0.97);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+<pre><code>.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-container {
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título 3 - Creativo con Fondo */
+.titulo-3 {
+  text-align: center;
+  background:rgb(33, 203, 17);
+  background: linear-gradient(to right,rgb(14, 236, 147),rgb(37, 116, 252));
+  padding: 30px 20px;
+  border-radius: 6px;
+  color: white;
+}
+
+.titulo-3 h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(7, 2, 2, 0.41);
+  letter-spacing: 2px;
+}
+
+.titulo-3 p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+</code></pre>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo-container">
+      <div class="titulo-3">
+        <h1>GitHub Projects</h1>
+        <p>Gestión de proyectos con GitHub projects</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<h1><span style="color:green">Introducción</span></h1>
+<p>Un proyecto es una hoja de cálculo, un tablero de tareas y una hoja de ruta adaptables que se integran con tus propuestas y solicitudes de incorporación de cambios en GitHub para ayudarte a planificar y realizar un seguimiento de tu trabajo de forma eficaz. Puedes crear y personalizar varias vistas filtrando, ordenando, agrupando tus propuestas y solicitudes de extracción. Un proyecto proporciona funciones flexibles que puedes personalizar según las necesidades y los procesos de tu equipo.</p>
+<h1><span style="color:green">¿Qué es GitHub Projects? </span></h1>
+<p>Github projects es una funcionalidad de la platoforma github diseñado para facilitar la gestión de proyectos en el ámbito de la programación y desarrollo de software , es un tabero virtual donde se puede crear tarjetas para cada tarea , organizarla en columnas según su estado y estas a asignarlas a miembros del equipo y establecer plazos.</p>
+<p>Si quieres más infomarción entra a : <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">Acerca de los proyectos</a></p>
+<h1><span style="color:green">Creando mi proyecto con GitHub Projects</span></h1>
+<ol>
+<li>GitHub Projects lo puedes realizar de 3 formas:</li>
+</ol>
+<ul>
+<li>Your repositories</li>
+<li>Your projects</li>
+<li>Your organizations</li>
+</ul>
+<p><img src="imagenes/image-30.png" alt="alt text"></p>
+<p>(en este caso utilizamos el Your repositories)</p>
+<ol start="2">
+<li>Seleccionar el new para comenzar un repositorio</li>
+</ol>
+<p><img src="imagenes/image-31.png" alt="alt text"></p>
+<ol start="3">
+<li>Después te pediré algunos datos sobre el proyecto, como el nombre, la descripción y su estado (público o privado).</li>
+</ol>
+<p><img src="imagenes/image-25.png" alt="alt text"></p>
+<ol start="4">
+<li>Una vez creado el repositorio, accedemos a la sección &quot;Projects&quot; para crear el proyecto.</li>
+</ol>
+<p><img src="imagenes/image-26.png" alt="alt text"></p>
+<ol start="5">
+<li>Luego, haz clic en donde dice &quot;New project&quot;.</li>
+<li>Se mostrarán varias plantillas que te ayudarán a gestionar tu proyecto de forma más     eficiente.</li>
+</ol>
+<p><img src="imagenes/image-28.png" alt="alt text"></p>
+<ol start="7">
+<li>Al acceder a la plantilla, veremos las siguientes columnas:</li>
+</ol>
+<ul>
+<li><strong>&quot;to do&quot;</strong> = por hacer</li>
+<li><strong>&quot;In Progress&quot;</strong> = en progreso</li>
+<li><strong>&quot;Done&quot;</strong> = hecho</li>
+</ul>
+<p>En la esquina superior derecha se muestra un gráfico que indica el progreso del proyecto.</p>
+<p><img src="imagenes/image-29.png" alt="alt text"></p>
+<p><strong>Asi es como puedes crear tu proyecto en GitHub.</strong></p>
+<h1><span style="color:green">Creación de etiquetas en mi proyecto con GitHub Projects</span></h1>
+<p>En este ejemplo se trabajará con el proyecto titulado Pago de la tienda de dispositivos, para el cual se proporcionará el siguiente enlace.
+<a href="https://devchallenges.io/challenge/apple-shop-checkout-page-challenge">Pago de la tienda de dispositivos</a></p>
+<p>Con este tema, realizaremos una simulación sobre cómo utilizar las etiquetas para llevar a cabo el proyecto de manera más eficiente.</p>
+<p><strong>1. Creación del proyecto:</strong>
+Después de crear el repositorio, accedemos a la sección &quot;Projects&quot; para iniciar un nuevo proyecto. Haz clic en &quot;New project&quot; y selecciona una de las plantillas disponibles para comenzar a organizar tu flujo de trabajo.</p>
+<p><strong>2. Selección de la plantilla:</strong>
+Una vez dentro, selecciona la plantilla &quot;Board&quot;, la cual te proporcionará una vista tipo tablero con tres columnas predeterminadas:</p>
+<ul>
+<li>
+<p>To do (Por hacer)</p>
+</li>
+<li>
+<p>In Progress (En progreso)</p>
+</li>
+<li>
+<p>Done (Hecho)</p>
+</li>
+</ul>
+<p><img src="imagenes/imagen-32.png" alt="alt text"></p>
+<p><strong>3. Asignación de tareas:</strong>
+En esta etapa, comenzaremos a desglosar el trabajo en subtareas específicas. Para cada tarjeta del tablero, puedes realizar las siguientes acciones:</p>
+<ul>
+<li>
+<p><strong>Agregar subtareas</strong> o listas de verificación.</p>
+</li>
+<li>
+<p><strong>Incluir imágenes</strong> referenciales para mayor claridad.</p>
+</li>
+<li>
+<p><strong>Vincular el proyecto con el repositorio</strong> correspondiente.</p>
+</li>
+<li>
+<p><strong>Asignar la tarea a un colaborador</strong>, quien será responsable de su ejecución dentro del plazo estimado</p>
+</li>
+</ul>
+<p><img src="imagenes/imagen-33.png" alt="alt text"></p>
+<p><strong>4. Vista general del tablero:</strong>
+Después de haber configurado las tareas y subtareas, obtendremos una vista estructurada como la siguiente. Esta disposición facilitará la gestión eficiente del proyecto planificado junto al equipo de trabajo, permitiendo un seguimiento claro del avance y la colaboración entre los integrantes.</p>
+<p><img src="imagenes/image-34.png" alt="alt text"></p>
+<p><a href="https://github.com/users/eduardovalenzuela3107/projects/3/views/1">ejemplo_projects</a></p>
+<p><strong>5. Conclusión</strong>
+Y eso sería todo respecto al uso eficiente y eficaz de GitHub Projects para el desarrollo colaborativo de un proyecto. Esta herramienta permite organizar tareas, asignar responsabilidades y realizar un seguimiento claro del progreso, lo que contribuye significativamente a una gestión colectiva más ordenada y productiva.</p>
+<p><strong>video recomendado</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JpKzBuYtkMU?si=cCmMTzszdFPET4_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
