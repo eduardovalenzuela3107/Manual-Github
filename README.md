@@ -1,5 +1,5 @@
 # Manual-Github 💻💻
-<<<<<<< HEAD
+
 
 # Manual-Github 💻💻
 <!-- Inicio de aporte de  Elias Josue Ventura Pezantes -->
@@ -36,4 +36,3 @@ Aprende a trabajar en un entorno de desarrollo completo basado en la nube usando
 - Jorge André Vilchez Alejo - 20231514 (jorge895)
 - Elías Josué Ventura Pezantes - 20231513 (josuesqrt)
 - Eduardo Jesús Valenzuela Villalobos - 20231512 (eduardovalenzuela3107)
->>>>>>> abeea8842beb49a5757b44577ba000b10b7d3437
