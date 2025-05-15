@@ -1,7 +1,8 @@
 # Manual-Github 💻💻
 
 Este repositorio contiene un manual completo y práctico sobre el uso de GitHub, orientado a personas que desean aprender o mejorar su manejo de esta potente plataforma de desarrollo colaborativo. Está diseñado como una guía paso a paso con explicaciones, ejemplos y recomendaciones para aprovechar al máximo las herramientas que ofrece GitHub.
-## Contenido del Manual
+## Contenido del Manual  [link de page](https://josuesqrt.github.io/)
+
 ### Issues
 Aprende a crear, gestionar y dar seguimiento a incidencias, sugerencias o tareas utilizando GitHub Issues, una herramienta esencial para la colaboración y el control de cambios.
 ### Pull Requests
